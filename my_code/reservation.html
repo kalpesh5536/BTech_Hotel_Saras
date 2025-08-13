@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hotel Saras Bar & Resto</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<!-- Reservation Section -->
+<section class="reservation" id="reservation">
+    <h1>Book a Table</h1>
+    <p>Reserve your table with us! Fill out the form below to make a reservation.</p>
+    
+    <form id="reservationForm">
+      <div class="input-group">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="tel" name="phone" placeholder="Your Phone Number" required pattern="[0-9]{10}" maxlength="10" title="Please enter a valid 10-digit phone number">
+      </div>
+      
+      <input type="date" name="date" required>
+      
+      <div class="input-group">
+        <input type="time" name="time" required>
+        <input type="number" name="guests" placeholder="Number of Guests" required min="1">
+      </div>
+      
+      <button type="submit">Reserve Now</button>
+    </form>
+  </section>
+  
+  <!-- Online Payment Section -->
+<section id="payment" class="payment" style="margin-top: 50px;">
+    <div class="container">
+      <h2>Online Payment</h2>
+      <p>Pay securely for your reservations or food orders.</p>
+  
+      <!-- QR Code -->
+      <img src="qr.png" alt="UPI QR Code" class="upi-qr" style="max-width: 200px;">
+      <p>Scan the QR with any UPI app (Google Pay, PhonePe, Paytm).</p>
+  
+      <!-- UPI ID Copy Option -->
+      <div class="upi-id-section">
+        <p><strong>UPI ID:</strong> <span id="upiId">9623976920@ybl</span></p>
+        <button onclick="copyUPI()">Copy UPI ID</button>
+      </div>
+  
+      <button onclick="window.open('https://your-payment-link.com')" class="pay-btn">Pay Now</button>
+    </div>
+  </section>
+  
+  <script>
+    function copyUPI() {
+      const upiId = document.getElementById("upiId").innerText;
+      navigator.clipboard.writeText(upiId).then(() => {
+        alert("UPI ID copied to clipboard!");
+      }, () => {
+        alert("Failed to copy UPI ID.");
+      });
+    }
+  </script>
+  
+  

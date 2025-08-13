@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Hotel Saras Bar & Resto</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+
+  <header>
+    <nav>
+      <div class="logo">Saras Bar & Resto</div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+        <li><a href="reservation.html">Reservation</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="contact">
+    <h1>Contact Us</h1>
+    <p>We'd love to hear from you! Send us your message or visit us in Solapur.</p>
+
+    <form action="/submit-contact" method="POST" class="contact-form">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+
+    <div class="contact-info">
+      <h2>Our Location</h2>
+      <p>Hotel Saras Bar & Resto,<br>MG Road, Solapur, Maharashtra - 413001</p>
+      <p>📞 Phone: +91 98765 43210</p>
+      <p>📧 Email: contact@sarasresto.com</p>
+
+      <!-- Social Media Links -->
+      <h3>Connect with us</h3>
+      <div class="social-links">
+        <a href="https://wa.me/9623976920" target="_blank" class="social-icon whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="https://www.instagram.com/" target="_blank" class="social-icon instagram">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.facebook.com/" target="_blank" class="social-icon facebook">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/kalpesh-sarsambe-801168249/" target="_blank" class="social-icon linkedin">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </div>
+
+
+      <!-- Google Map Embed -->
+      <h3>Find Us on Map</h3>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3801.5275823037887!2d75.8321596751715!3d17.6725201832642!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc5d1f8ad12fb31%3A0x36d0f1575b18824c!2sHOTEL%20SARAS%20BAR%20%26%20RESTO!5e0!3m2!1sen!2sin!4v1746121806288!5m2!1sen!2sin"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Hotel Saras Bar & Resto, Solapur. All Rights Reserved.</p>
+  </footer>
+
+</body>
+
+</html>
